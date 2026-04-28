@@ -15,7 +15,7 @@ export function About() {
             <div className="relative group max-w-md">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
               <img
-                src="https://kellykevin.github.io/riches-kelly-portfolio/images/image1%20(1).jpg"
+                src="/assets/profile.jpg"
                 alt="Kelly Kevin Momanyi"
                 className="relative rounded-xl shadow-lg w-full object-cover aspect-[4/5]"
               />
