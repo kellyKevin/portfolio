@@ -4,32 +4,36 @@ export interface Project {
   image: string;
   technologies: string[];
   githubUrl: string;
-  liveUrl: string;
+  liveUrl?: string;
 }
 
 export const projects: Project[] = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory management",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
-    technologies: ["React", "Node.js", "MongoDB", "Redux"],
-    githubUrl: "#",
-    liveUrl: "#"
+    title: "IoT Soil Moisture Monitoring System",
+    description: "Built using ESP32 + sensor + LCD + web server. Real-time irrigation insights and pump automation simulation. Works offline (critical for rural deployment).",
+    image: "https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?auto=format&fit=crop&w=800&q=80",
+    technologies: ["C++", "ESP32", "IoT", "Embedded Systems", "Web Server"],
+    githubUrl: "https://github.com/kellyKevin/ESP32-Soil-Moisture-Monitoring-system",
   },
   {
-    title: "Weather Dashboard",
-    description: "Real-time weather tracking application with detailed forecasts",
-    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&w=800&q=80",
-    technologies: ["React", "TypeScript", "OpenWeather API"],
-    githubUrl: "#",
-    liveUrl: "#"
+    title: "Galaxy Wellbeing Prediction System",
+    description: "Data-driven prediction system focusing on analysis & modeling. Foundation for future AI/ML work in wellbeing metrics.",
+    image: "https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&w=800&q=80",
+    technologies: ["Python", "Data Science", "Prediction Models", "AI/ML"],
+    githubUrl: "https://github.com/kellyKevin/galaxy-wellbeing-index-prediction",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative task management tool with real-time updates",
-    image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&w=800&q=80",
-    technologies: ["React", "Firebase", "Tailwind CSS"],
-    githubUrl: "#",
-    liveUrl: "#"
+    title: "Seedlings E-commerce Platform",
+    description: "Marketplace + educational platform built with React, Firebase, and Contentful. Features authentication and CMS integration.",
+    image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=800&q=80",
+    technologies: ["React", "Firebase", "Contentful", "Tailwind CSS"],
+    githubUrl: "https://github.com/kellyKevin/Webstack_Portfolio_Project",
+  },
+  {
+    title: "Developer Portfolio Website",
+    description: "Personal + collaborative portfolio featuring a blog and project showcase with secure authentication.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    technologies: ["React", "TypeScript", "Node.js", "Authentication"],
+    githubUrl: "https://github.com/kellyKevin/riches-kelly-portfolio",
   }
 ];
