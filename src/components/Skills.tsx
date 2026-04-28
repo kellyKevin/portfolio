@@ -1,29 +1,51 @@
 import React from 'react';
-import { Code2, Terminal, Cpu, Database, Server, Globe, GitBranch, Layers } from 'lucide-react';
+import {
+  Code2, Terminal, Cpu, Database, Server,
+  Globe, GitBranch, Layers, Settings, Wrench
+} from 'lucide-react';
 
 export function Skills() {
   const skillCategories = [
     {
+      name: "Programming & Development",
+      skills: [
+        { name: "JavaScript", icon: <Globe className="w-5 h-5" /> },
+        { name: "TypeScript", icon: <Code2 className="w-5 h-5" /> },
+        { name: "Python", icon: <Terminal className="w-5 h-5" /> },
+        { name: "C++", icon: <Settings className="w-5 h-5" /> },
+      ]
+    },
+    {
       name: "Frontend",
       skills: [
         { name: "React", icon: <Layers className="w-5 h-5" /> },
-        { name: "TypeScript", icon: <Code2 className="w-5 h-5" /> },
-        { name: "JavaScript", icon: <Globe className="w-5 h-5" /> },
+        { name: "Tailwind CSS", icon: <Layers className="w-5 h-5" /> },
       ]
     },
     {
-      name: "Backend",
+      name: "Backend & Systems",
       skills: [
         { name: "Node.js", icon: <Server className="w-5 h-5" /> },
-        { name: "Python", icon: <Terminal className="w-5 h-5" /> },
+        { name: "FastAPI", icon: <Server className="w-5 h-5" /> },
+        { name: "IoT Systems", icon: <Cpu className="w-5 h-5" /> },
+        { name: "System Design", icon: <Cpu className="w-5 h-5" /> },
       ]
     },
     {
-      name: "Tools & Others",
+      name: "Databases & Tools",
       skills: [
         { name: "SQL", icon: <Database className="w-5 h-5" /> },
+        { name: "MongoDB", icon: <Database className="w-5 h-5" /> },
+        { name: "Firebase", icon: <Database className="w-5 h-5" /> },
+        { name: "Pandas", icon: <Database className="w-5 h-5" /> },
+      ]
+    },
+    {
+      name: "Dev Tools",
+      skills: [
         { name: "Git", icon: <GitBranch className="w-5 h-5" /> },
-        { name: "System Design", icon: <Cpu className="w-5 h-5" /> },
+        { name: "Troubleshooting", icon: <Wrench className="w-5 h-5" /> },
+        { name: "API Development", icon: <Code2 className="w-5 h-5" /> },
       ]
     }
   ];
@@ -35,13 +57,13 @@ export function Skills() {
           <Code2 className="w-8 h-8 text-blue-600" />
           Skills
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category) => (
             <div key={category.name} className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-xl font-semibold mb-6 text-blue-600 dark:text-blue-400">
                 {category.name}
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {category.skills.map((skill) => (
                   <div
                     key={skill.name}
@@ -50,7 +72,7 @@ export function Skills() {
                     <span className="text-gray-600 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">
                       {skill.icon}
                     </span>
-                    <span className="font-medium">{skill.name}</span>
+                    <span className="font-medium text-sm sm:text-base">{skill.name}</span>
                   </div>
                 ))}
               </div>
