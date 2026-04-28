@@ -16,6 +16,27 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/kellyKevin/ESP32-Soil-Moisture-Monitoring-system",
   },
   {
+    title: "Conflict Pattern Analysis",
+    description: "Spatiotemporal analysis on UCDP GED conflict data. Applied DBSCAN for event clustering, Prophet for forecasting, and Q-learning for mitigation policy simulation.",
+    image: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80",
+    technologies: ["Python", "DBSCAN", "Prophet", "Reinforcement Learning", "Pandas"],
+    githubUrl: "https://github.com/kellyKevin/conflict-pattern-analysis",
+  },
+  {
+    title: "World War Chain Reaction Model",
+    description: "Strategic network graph of WW2 alliances using NetworkX. Applied Graph ML to simulate 'domino effects' of formal treaties and identify critical vulnerabilities.",
+    image: "https://images.unsplash.com/photo-1558494949-ef010ca68093?auto=format&fit=crop&w=800&q=80",
+    technologies: ["Python", "NetworkX", "Graph ML", "Data Visualization"],
+    githubUrl: "https://github.com/kellyKevin/ww2-chain-reaction-model",
+  },
+  {
+    title: "Sentiment & Propaganda Analysis",
+    description: "NLP system analyzing 5,000+ political text entries. Integrated spaCy for NER, LDA for topic modeling, and sentiment scoring for propaganda detection.",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    technologies: ["Python", "NLP", "spaCy", "Topic Modeling", "Scikit-learn"],
+    githubUrl: "https://github.com/kellyKevin/sentiment-propaganda-nlp",
+  },
+  {
     title: "Galaxy Wellbeing Prediction System",
     description: "Data-driven prediction system focusing on analysis & modeling. Foundation for future AI/ML work in wellbeing metrics.",
     image: "https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&w=800&q=80",
